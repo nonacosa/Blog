@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/underscore.js/1.8.3/underscore-min.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+
+//        [1,2,3].forEach(alert);//ES5
+
+        function splat(fun){
+            return function(array){
+                return fun.apply(null,array);
+            }
+        }
+        var addArrayElements = splat(function(x,y){
+            return x+y;
+        })
+        addArrayElements([1,2]);
+
+        function unsplat(fun){
+            return function(){
+                return fun.call(null,_.toArray(arguments));
+            }
+        }
+        var joinElements = unsplat(function(array){
+            return array.join(' ')
+        })
+        joinElements('-','$','#','/','!');
+
+
+        function parseAge(age){
+            if(!_.isString(age)) throw Error('no string')
+            var a ;
+            console.log('want parse age');
+            a = parseInt(age,10);
+            if(_.isNaN(a)){
+                console.log(['no parse age:',age].join(' '));
+                a =0;
+            }
+            return a;
+        }
+    </script>
+</body>
+</html>
