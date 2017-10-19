@@ -1,0 +1,152 @@
+  首先很抱歉近期公务繁忙没来得及更新......
+  为了适应节奏，先先抛出两个我认为相对简单、常用的用来节省开发效率的模式，使用的场景也是很多的，相对没有什么难点，这里结合场景我总结了一下。（本章适合快速阅读）
+  
+  ---
+  
+   ## 适配器模式
+   - 组建与组件间的适配
+   - 类与类之间的适配
+   - 方法与方法间的适配
+   - 数据结构和数据结构之间的适配
+   
+### 举个栗子：
+  usb目前已经不满足我们主流手机的快充功能了，需要用到type-c接口，我们肯定不会把线剪短换上一个type-c的头的，我们完全可以通过买一个usb转type-c的转接头来解决我们这个问题。
+再多的例子就不讲了:)
+
+### underscore适配器
+假设，注意是假设，公司有一个框架NB.js,他的语法以及实现形式基本和underscore.js相似，例如each操作：
+```
+//NB.js
+NB.each([1,2,3],function(key,value){
+    console.log(this.location.href + '?'+value)
+},window)
+```
+```
+//underscore.js
+_.each([1,2,3],function(value,key){
+    console.log(this.location.href + '?'+value)
+},window)
+```
+两个框架的key，value顺序是不一样的。
+公司新招了一批同事，他们用过underscore.js但是完全没听说过NB.js,公司时间紧任务重，领导决定，先让公司同事使用underscore的方式使用内部的框架，逐步完善NB.js文档。
+
+这个任务交给你，但总不能对NB.js进行大量的修改，就像上面转接头的问题，我们换一个转接头就好了：
+
+```
+window.NB = NB = _ ; //underscore转NB适配器。
+```
+
+### 参数适配器
+```
+function doSomeThing(name,id,color,height,width){
+    
+}
+doSomeThing('input1','99899','red','200','200')
+```
+这样的一个函数有多个固定顺序的参数，我们知道显然是不友好的，我们写函数的时候一定要避免这样的问题，这样会显得很`low`，首先就要想到`适配`
+```
+function doSomeThing(obj){
+    var adapter = {
+        name:'name',
+        id:'001',
+        color:'yellow',
+        height:'100',
+        width:'100'
+    };
+    for(var i in adapter){
+        adapter[i] = obj[i] || adapter[i];
+    }
+    console.log(adapter);
+}
+
+var obj = {color:'red'}
+doSomeThing(obj)
+//object {name: "name", id: "001", color: "red", height: "100", width: "100"}
+```
+
+上面的问题其实很多同学早就知道了，还有一种情况就是，前后分离的开发过程中，后台人员习惯返回的格式跟全端人员预期的不一样，我们也可以进行适配。
+
+```
+// 后端返回Object，前端需要Array
+
+$.ajax({
+    url:xxx.action,
+    success:function(data){
+        doSomeThing(dataAdapter(data));
+    }
+})
+
+function dataAdapter(obj){
+    return [obj['name],obj['id'],obj['color'],obj['height'],obj['width']];
+}
+```
+
+像这样，后端有任何变化我们只需要修改dataAdapter函数就好，其他的通途大家自行脑补：）, 其实各种设计模式的宗旨都是`低耦合`,`易维护`。
+
+## 装饰模式
+在原型不变的基础是，通过对他进行包装，附加属性，附加方法，使原有的对象、函数能满足更复杂的需求。因为已经说了`装饰`，所以只是添加新功能时候可以用。
+
+举个最简单的例子：
+系统中有 一些 按钮，目前每个按钮点击后弹出`你好`，现在需要在弹出你好过5秒之后在弹出`再见`更具体的大家自己脑补，很常见的需求。
+有的人开始马上动手写了：
+```
+
+<button id="A"></button>
+//原来的
+ var A = document.getElementById('A');
+    A.onclick = function(){
+        alert(1)
+    };
+//修改后的
+ var A = document.getElementById('A');
+    A.onclick = function(){
+        alert(1)；
+        setTimeout(function(){
+            alert(2)
+        },5000)
+    };
+    
+```
+当你沾沾自喜时，你发现还有99个按钮要改......当你真的完成了这个不可思议的任务后，你发现需求变了......好那我们还是尽快使用`装饰者模式`吧:
+
+```
+var A = document.getElementById('A');
+    A.onclick = function(){
+        alert(1)
+    }
+    //装饰者
+    var decorator = function (id,fn){
+        var dom = document.getElementById(id);
+        if(typeof dom.onclick === 'function'){
+            var oldClickFn = dom.onclick;
+            dom.onclick = function(){
+                oldClickFn();
+                fn();
+            }
+        }else{
+            dom.onclick = fn;
+        }
+    }
+    //利用装饰者对元素增加事件。
+    decorator('A',function(){
+        setTimeout(function(){
+            alert(2)
+        },5000)
+    })
+    
+```
+这样需求改了也不怕了，我们只要修改`decorator`函数就好了。
+当然随手写的也有缺点，我们的参数还是按照顺序来排列的，同学们可以参考上面讲的适配器模式，方便以后维护增加代码！decorator是全局的，有兴趣可以参考`javascript`命名空间问题，总之，代码是越写越优雅的。
+
+## 适配器和装饰器的不同之处
+
+- 适配器的方法是对原有对象进行适配，添加的方法与原有方法功能大致相似，只是换了一种更加便利与我们开发的形式，但是装饰者提供的方法是有区别的，一般都是比之前的更加丰满，弥补之前的不足之处。
+- 装饰者模式中可以不了解原有功能，并且原有的方法照样可以原封不动的使用，如果原有的方法不能用了，说明你的模式有问题，是不可取的。
+
+## PS: 
+
+  最近私事比较多，设计模式的文章以后的更新频率是一周一章，比较复杂的单独一章，比较简单或关联较大的两章并一章，本章5分钟阅读流水账，希望大家共同努力。
+  
+---
+![](https://dn-mhke0kuv.qbox.me/c24affb7d0e592b4c4d0)
+
