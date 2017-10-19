@@ -33,18 +33,56 @@
     }
     //        signInPositive(10);
 
-    /**
-     * todo:给读者增加过滤器
-     * reduce : Reduce就是一个汇总的过程
-     * @constructor
-     */
-    function startPositive() {
+   
 
+    /**
+     * 修改下主函数
+     * @param number
+     * @returns {*}
+     */
+    function signIn(number) { //签到
+        return _.chain([])//①chain干什么的
+                /*.push('同学 ' + number + ' 正常报数')*/
+                .tap(function (numberBill) { //②numberBill哪来的?
+                     numberBill.push('同学 ' + (number+1) + ' 正常报数')
+                     console.log(('同学 ' + (number+1) + ' 正常报数'))
+                    //现在我故意删除体内循环
+                }).value();//③
     }
 
-    var sum = _.reduce([1, 2, 3], function (memo, num) {
-        return memo + num;
-    }, 0);
+    /**
+     *
+     测试_.reduce _.range组合 
+     * @param start
+     * @param end
+     * @param signInFn
+     * @returns {*}
+     */
+    var sum = _.reduce(_.range(1,10,1), function(memo, num){ return memo + num; }, 0);
+
+    /**
+     * 步长迭代记忆副函数 todo:给读者增加过滤器
+     * reduce : Reduce就是一个汇总的过程
+     * @param start
+     * @param end
+     * @param signInFn 你传入的主函数
+     * @returns {*}
+     */
+    function startPositive(start,end,signInFn){
+        return _.reduce(
+                _.range(start,end,1),
+                function(acc,n){
+                    return acc.concat(signInFn(n));
+                },[])
+    }
+
+    var peapleArr = startPositive(0,10,signIn)
+
+    
+
+    //写倒序,然后写整体
+//    signInPositive(10)
+
 
 
 </script>
