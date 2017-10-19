@@ -2,6 +2,7 @@
 
 
 
+
 the early bird catches the worm !
 
 ## 目录
@@ -14,6 +15,7 @@ the early bird catches the worm !
 #### - [JavaScript 设计模式 ④  用组合模式写出复杂组件](https://github.com/pkwenda/blog/issues/4)
 
 -  函数编程系列
+
 
 #### - [javascript函数式编程系列 ① call apply](https://github.com/pkwenda/blog/issues/5)
 #### - [javascript函数式编程系列 ② 优雅的使用underscore进行函数编程](https://github.com/pkwenda/blog/issues/6)
