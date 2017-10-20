@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../temp/underscore.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+
+    /**
+     * _.map _.each 区别 : 是否可以返回 函数内结果集
+     */
+
+    _.map([1,2],function(v,k,list){
+        return (10*v)
+    },alert); // [10,20]
+
+    _.each([1,2],function(v,k,list){
+        return (10*v)
+    },alert); // [1,2]
+
+
+    /**
+     * reduce 的一般用法
+     */
+
+    _.reduce(['庄','文','达'],function(memo,str){
+        return memo + str;
+    },'')
+
+    /**
+     *
+     */
+    _.where([{title:'12'},{title:'23'}],{title:'12'})
+
+</script>
+</body>
+</html>
