@@ -34,6 +34,14 @@
      */
     _.where([{title:'12'},{title:'23'}],{title:'12'})
 
+    _.invoke([[5, 1, 7], [3, 2, 1]], 'sort');
+
+
+    var fibonacci = _.memoize(function(n) {
+        return n == 0 ? n: fibonacci(n - 1) + fibonacci(n - 2);
+    });
+
+
 </script>
 </body>
 </html>
