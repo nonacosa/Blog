@@ -1,11 +1,11 @@
-## blog
+### 全栈工程师养成
 
 
 
 
-the early bird catches the worm !
+ 
 
-## 目录
+ 
 
 - 设计模式系列
 
@@ -19,6 +19,10 @@ the early bird catches the worm !
 
 #### - [javascript函数式编程系列 ① call apply](https://github.com/pkwenda/blog/issues/5)
 #### - [javascript函数式编程系列 ② 优雅的使用underscore进行函数编程](https://github.com/pkwenda/blog/issues/6)
+
+- 玩具系列
+
+#### - [如何用node开发自己的cli工具](https://github.com/pkwenda/blog/issues/7)
  
   
   
