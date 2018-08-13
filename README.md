@@ -31,6 +31,8 @@
 | Project | language | Article |
 |:-------:|:-------:|:------|
 | cli工具 | node | [如何用node开发自己的cli工具](https://github.com/pkwenda/blog/issues/7) 
+| 爬虫 | java | [如何写一个垂直爬虫并抓取知乎用户20万数据](https://github.com/pkwenda/blog/issues/8) 
+
  
 
 -------
