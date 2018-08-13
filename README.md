@@ -1,3 +1,9 @@
+[![Build Status](https://img.shields.io/badge/%E4%B8%BB%E9%A1%B5-%E6%8E%98%E9%87%91-blue.svg)](https://juejin.im/user/5823d1a3a22b9d0067fde1f7)
+[![Build Status](https://img.shields.io/badge/%E4%B8%BB%E9%A1%B5-segmentfault-green.svg)](https://segmentfault.com/u/pkwenda)
+[![Build Status](https://img.shields.io/badge/%E4%B8%BB%E9%A1%B5-github-lightgrey.svg)](https://github.com/pkwenda)
+
+  
+
 
 ## 🏅 设计模式
 
