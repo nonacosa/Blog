@@ -14,7 +14,7 @@
 |'适配器'和'装饰者'模式 | javascript | [生活中的'适配器'和'装饰者'模式](https://github.com/pkwenda/blog/issues/3) 
 | 组合模式 | javascript | [用组合模式写出复杂组件](https://github.com/pkwenda/blog/issues/4) 
 
--------
+ 
 
 
 ## 🏅 函数编程
@@ -24,9 +24,7 @@
 | javascript实现 | javascript | [call apply、](https://github.com/pkwenda/blog/issues/5) <br/> [优雅的使用underscore进行函数编程](https://github.com/pkwenda/blog/issues/6) 
  
 
--------
 
--------
 
 
 ## 🏅 java
@@ -36,7 +34,6 @@
 | 分析`guava`中优秀的代码段 | java | [Guava_Magic_Code_1](https://github.com/pkwenda/blog/issues/9)<br/>[Guava_Magic_Code_2](https://github.com/pkwenda/blog/issues/10)  
  
 
--------
 
 
 ## 🏅 项目实践
@@ -48,6 +45,5 @@
 
  
 
--------
 
  
