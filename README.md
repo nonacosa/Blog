@@ -26,6 +26,19 @@
 
 -------
 
+-------
+
+
+## 🏅 java
+
+| Project | language | Article |
+|:-------:|:-------:|:------|
+| 分析`guava`中优秀的代码段 | java | [Guava_Magic_Code_1](https://github.com/pkwenda/blog/issues/9)<br/>[Guava_Magic_Code_2](https://github.com/pkwenda/blog/issues/10)  
+ 
+
+-------
+
+
 ## 🏅 项目实践
 
 | Project | language | Article |
