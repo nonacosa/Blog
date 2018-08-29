@@ -33,7 +33,7 @@
 
 
 
-## 👹 java
+## ☕️ java
 
 | Project | language | Article |
 |:-------:|:-------:|:------|
