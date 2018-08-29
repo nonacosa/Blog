@@ -37,7 +37,7 @@
 
 | Project | language | Article |
 |:-------:|:-------:|:------|
-| 初始docker | video | [庄文达的`docker`扫盲视频教程 上](https://www.youtube.com/watch?v=IaSOSBs8Z5U) 
+| 初始docker | video | [`docker`扫盲视频教程 上](https://www.youtube.com/watch?v=IaSOSBs8Z5U) 
  
 
 
