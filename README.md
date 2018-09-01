@@ -9,7 +9,7 @@
 |:-------:|:-------:|:------|
 | 序章 | 开源的意义 | [序： 开源的意义](https://github.com/pkwenda/blog/issues/9) 
 | 开篇 | 纵观WEB历史演变 | [开篇： 纵观WEB历史演变](https://github.com/pkwenda/blog/issues/10) 
-| 开篇 | 深入聊聊前后分离 | [开篇： 深入聊聊前后分离](https://github.com/pkwenda/blog/issues/11) 
+| 开篇 | 深入聊聊前后分离 | [开篇： 深入聊聊前后分离架构](https://github.com/pkwenda/blog/issues/11) 
 | 准备 | 前端开发的技术选型与搭建 | 前端准备： 前端开发的技术选型与搭建
 | 实战 | 制作一个高可用前端脚手架 | 前端实战： 制作一个高可用前端脚手架
 
