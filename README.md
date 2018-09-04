@@ -50,7 +50,7 @@
 | Project | language | Article |
 |:-------:|:-------:|:------|
 | 初识docker | video | [`docker`扫盲视频教程 上](https://www.youtube.com/watch?v=IaSOSBs8Z5U) 
-| 清理 docker 缓存 | video | [清除 mac 上巨大的 docker 缓存](https://github.com/pkwenda/Blog/blob/master/clear_docker_cache_mac.sh) 
+| 清理 docker 缓存 | video | [清除 mac 上巨大的 docker 缓存脚本](https://github.com/pkwenda/Blog/blob/master/clear_docker_cache_mac.sh) 
  
 
 
