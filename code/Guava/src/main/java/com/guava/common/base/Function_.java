@@ -1,10 +1,14 @@
-package com.google.common.base;
+package com.guava.common.base;
 
 import java.util.function.Function;
 
 /**
  * Guava com.google.common.base.Function
  * 原始的Function实现 - Guava
+ *
+ * 使用函数式编程的条件：
+ * 1 使用函数式风格以后，整个工程的代码行会净减少
+ * 2 为了提高效率，转换集合的结果需要懒视图，而不是明确计算过的集合，真正做了性能测试并且有测试数据来证明函数式版本更快
  */
 public class Function_ {
 
@@ -37,5 +41,6 @@ public class Function_ {
   public static void guavaFunction() {
 
   }
+
 
 }
