@@ -2,3 +2,5 @@
 /config/
 /dist/
 /*.js
+/test/unit/coverage/
+/src/renderer/assets/
