@@ -10,7 +10,7 @@
 | 序章 | 开源的意义 | [序： 开源的意义](https://github.com/pkwenda/blog/issues/9) 
 | 开篇 | 纵观WEB历史演变 | [开篇： 纵观WEB历史演变](https://github.com/pkwenda/blog/issues/10) 
 | 探究 | 深入聊聊前后分离 | [探究： 深入聊聊前后分离架构](https://github.com/pkwenda/blog/issues/11) 
-| 准备 | 前端开发的技术选型与介绍 | [前端准备： 前端了解过关了吗？前端基础架构和硬核介绍](https://github.com/pkwenda/blog/issues/12) 
+| 准备 | 前端开发的技术选型与介绍 | [前端准备： 前端基础架构和硬核介绍](https://github.com/pkwenda/blog/issues/12) 
 | 实战 | 快速构建规范的前端项目骨架 | [前端实战： 5分钟快速构建规范的前端项目骨架](https://github.com/pkwenda/blog/issues/14)
 
   
