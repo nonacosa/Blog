@@ -2,6 +2,14 @@
   <div class="Blog">
     <h1>{{ msg }}</h1>
      
+  <div v-for="(blog,index) in blogList" v-bind:key="index">
+    <h3 >
+      <a :href="`https://juejin.im/book/`+blog.id" >
+        <span>{{blog.title}}</span>
+      </a>
+      
+      </h3>
+  </div>
      
   </div>
 </template>
@@ -11,7 +19,8 @@ export default {
   name: "Blog",
   data() {
     return {
-      msg: "Welcome to Your Blog Page"
+      msg: "掘金小册一览",
+      blogList: []
     };
   },
   created() {
@@ -20,6 +29,7 @@ export default {
   methods: {
     getBlog() {
       this.$http.get("/v1/getListByLastTime?src=web&pageNum=1").then(res => {
+        this.blogList = res.data.d;
         debugger;
       });
     }

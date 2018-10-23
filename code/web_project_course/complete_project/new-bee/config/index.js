@@ -11,14 +11,13 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: [{
-      // https://www.easy-mock.com/mock/5a6840b43d63972d717dc5b4/webapp/hotel/hotelOrders/reserveCheckIn
+      //拦截所有v1开头的xhr请求
       context: ['/v1'],
       target: "https://xiaoce-timeline-api-ms.juejin.im",
-
       cookieDomainRewrite: {
         // 不用cookie
       },
-      changeOrigin: true,
+      changeOrigin: true,//重点，此处本地就会虚拟一个服务替我们接受或转发请求
       secure: false
     }],
 
