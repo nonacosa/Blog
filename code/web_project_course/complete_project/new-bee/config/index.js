@@ -10,7 +10,17 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: [{
+      // https://www.easy-mock.com/mock/5a6840b43d63972d717dc5b4/webapp/hotel/hotelOrders/reserveCheckIn
+      context: ['/v1'],
+      target: "https://xiaoce-timeline-api-ms.juejin.im",
+
+      cookieDomainRewrite: {
+        // 不用cookie
+      },
+      changeOrigin: true,
+      secure: false
+    }],
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST

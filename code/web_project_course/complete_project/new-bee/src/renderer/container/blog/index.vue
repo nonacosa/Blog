@@ -13,6 +13,16 @@ export default {
     return {
       msg: "Welcome to Your Blog Page"
     };
+  },
+  created() {
+    this.getBlog();
+  },
+  methods: {
+    getBlog() {
+      this.$http.get("/v1/getListByLastTime?src=web&pageNum=1").then(res => {
+        debugger;
+      });
+    }
   }
 };
 </script>
