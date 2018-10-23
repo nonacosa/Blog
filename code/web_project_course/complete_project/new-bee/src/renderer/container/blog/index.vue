@@ -14,7 +14,10 @@
   </div>
 </template>
 
+
+
 <script>
+import juejin from "@/api/juejin";
 export default {
   name: "Blog",
   data() {
@@ -28,9 +31,11 @@ export default {
   },
   methods: {
     getBlog() {
-      this.$http.get("/v1/getListByLastTime?src=web&pageNum=1").then(res => {
-        this.blogList = res.data.d;
-        debugger;
+      // this.$http.get("/v1/getListByLastTime?src=web&pageNum=1").then(res => {
+      //   this.blogList = res.data.d;
+      // });
+      juejin.getBlog("1", response => {
+        this.blogList = response.d;
       });
     }
   }

@@ -39,7 +39,8 @@ module.exports = {
       'assets': resolve('src/renderer/assets'),
       'components': resolve('src/renderer/components'),
       'container': resolve('src/renderer/container'),
-      'utils': resolve('src/renderer/utils')
+      'utils': resolve('src/renderer/utils'),
+      'api': resolve('src/renderer/api')
     }
   },
   module: {
