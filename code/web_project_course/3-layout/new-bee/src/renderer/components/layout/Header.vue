@@ -1,6 +1,6 @@
 <template>
 
-    <div id="bee-header"   element-loading-text="正在努力请求github..." element-loading-background="rgba(0, 0, 0, 0.8)">
+    <div id="bee-header"   >
         <!-- 遮罩 -->
         <div  :class="  loading ? `modal is-active` : `modal` " style="background-color: #ffffff36">
                 <img src="https://img.actd.tw/images/2018/11/17/ezgif-4-05f4bba41fef.gif" style="width: 300px" alt="">
@@ -92,11 +92,24 @@
             </div>
 
                
-                              <a class="is-hidden-mobile"  target="_blank">
-                              
-                                <img :src="userInfo.avatarPath" class=" header-avatar img-circle "
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="is-hidden-mobile"  target="_blank">          
+              <img src="https://avatars2.githubusercontent.com/u/14212375?s=400&u=dc515636befebfda36501309d1cdc087ee31d500&v=4" class=" header-avatar img-circle "
                                   style="margin-top: 10px">
-                              </a>
+              </a>
+              <div class="navbar-dropdown ">
+                <a class="navbar-item " type="收藏集">
+                  写文章
+                </a>
+                <a class="navbar-item" type="徽章">
+                  设置
+                </a>
+                <a class="navbar-item " type="排名">
+                  退出
+                </a>
+              </div>
+            </div>   
+            
  
            
             <div class="login-before">
@@ -142,3 +155,11 @@ export default {
   methods: {}
 };
 </script>
+
+<style scoped>
+.img-circle {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+</style>

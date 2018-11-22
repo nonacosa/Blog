@@ -15,15 +15,7 @@
                             <span class="icon"><i class="fa fa-github"></i></span>
                         </a>.</span>
                     <div class="social-links mt-20">
-                        <!-- <a href="https://fb.me/cssninjaStudio" target="_blank">
-                            <span class="icon"><i class="fa fa-facebook"></i></span>
-                        </a>
-                        <a href="https://twitter.com/cssninjaStudio" target="_blank">
-                            <span class="icon"><i class="fa fa-twitter"></i></span>
-                        </a> -->
-                        <!--a href="#">
-                            <span class="icon"><i class="fa fa-dribbble"></i></span>
-                        </a-->
+                         
                         
                     </div>
                 </div>
@@ -81,9 +73,34 @@ export default {
   },
   created() {},
   destroyed() {},
-  mounted() {
-    this.auto();
-  },
+  mounted() {},
   methods: {}
 };
 </script>
+
+<style scoped>
+.bd-article-overlay {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #0a0a0a;
+  opacity: 0;
+  -webkit-transition-duration: 86ms;
+  transition-duration: 86ms;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.bd-article-image {
+  background-color: #00d1b2;
+  display: block;
+  height: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: center;
+}
+</style>
