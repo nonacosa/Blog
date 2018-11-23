@@ -10,7 +10,7 @@ export function axiosIntercept(Vue, router) {
     })
 
     //http request 拦截器 一般用来在请求前塞一些全局的配置、或开启一些 css 加载动画
-    axios.interceptors.request.use(
+    axiosIntercept.interceptors.request.use(
         (config) => {
             // 判断是否存在token，如果存在的话，则每个http header都加上token
             // if (store.getters.accessToken) {
