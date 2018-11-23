@@ -1,6 +1,9 @@
 <template>
-      <div class="container" style="height:500px">
-          <article class="column is-3" style="height:240px" v-for="blog in blogs" v-bind:key="blog"> 
+
+      <div class="container" style="height:700px;padding-left: 80px;padding-right: 80px;">
+        <AD></AD>
+        <h1  >博客列表</h1>
+          <article class="column is-3"   v-for="blog in blogs" v-bind:key="blog"> 
             <a   class="bd-article-image is-bootstrap" >
             <span class="bd-article-overlay"></span>
             <span class="bd-article-icon">
@@ -25,11 +28,23 @@
 
 <script>
 import _ from "lodash";
+import AD from "@/components/common/AD";
+let article = { tag: "java", title: "java", commendCount: 0 };
 export default {
-  name: "Footer",
+  name: "Content",
+  components: { AD },
   data() {
     return {
-      blogs: [{ tag: "java", title: "java", commendCount: 0 }]
+      blogs: [
+        article,
+        article,
+        article,
+        article,
+        article,
+        article,
+        article,
+        article
+      ]
     };
   },
   created() {},
@@ -112,6 +127,19 @@ a strong {
 .bd-article-icon {
   color: #0a0a0a;
   opacity: 0.25;
+}
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.column.is-3,
+.column.is-3-tablet {
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  width: 25%;
+  float: left;
 }
 </style>
 
