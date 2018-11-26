@@ -10,7 +10,6 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Content from "@/components/layout/Content";
-import _ from "lodash";
 export default {
   name: "NewBeeIndex",
   components: { Header, Footer, Content },

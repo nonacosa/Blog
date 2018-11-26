@@ -27,7 +27,6 @@
 
 
 <script>
-import _ from "lodash";
 import AD from "@/components/common/AD";
 let article = { tag: "java", title: "java", commendCount: 0 };
 export default {
