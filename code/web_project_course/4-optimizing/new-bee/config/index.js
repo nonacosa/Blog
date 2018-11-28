@@ -69,9 +69,9 @@ module.exports = {
     // https://webpack.js.org/configuration/devtool/#production
     devtool: '#source-map',
 
-    // Gzip off by default as many popular static hosts such as
-    // Surge or Netlify already gzip all static assets for you.
-    // Before setting to `true`, make sure to:
+    // 默认情况下Gzip关闭，因为很多流行的静态主机，例如
+    // Surge or Netlify 已经为你开启gzip所有静态资源。
+    // 在设置为“true”之前，请确保：
     // npm install --save-dev compression-webpack-plugin
     productionGzip: true,
     productionGzipExtensions: ['js', 'css'],
