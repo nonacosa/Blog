@@ -33,6 +33,10 @@
  
 
  
+ 
+| Project | language | Article     |
+|---------|----------|-------------|
+| 分布式文件系统 | golang   | [如何选型分布式文件系统](https://github.com/pkwenda/blog/issues/18) |
 
  
  
