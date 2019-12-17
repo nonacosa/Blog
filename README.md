@@ -74,6 +74,6 @@
  
 | Project | language | Article     |
 |---------|----------|-------------|
-| 团队代码提交规范 | 漫谈   | [代码提交流程&规范](https://github.com/pkwenda/blog/issues/20) |
+| 团队代码提交规范 | 漫谈   | [代码提交流程&规范](https://github.com/pkwenda/blog/issues/24) |
 | 团队代码提交规范 | 漫谈   | [敏捷协作 && 态度](https://github.com/pkwenda/blog/issues/25) |
 
