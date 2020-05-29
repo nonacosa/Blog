@@ -15,6 +15,7 @@
 
 | section | name | Article |
 |:-------:|:-------:|:------|
+| 实战 | 前端整理 | [前端系列文章 20000 字整理](https://github.com/pkwenda/blog/issues/30)  
 | 序章 | 开源的意义 | [~~序： 开源的意义~~](https://github.com/pkwenda/blog/issues/9) 
 | 开篇 | 纵观WEB历史演变 | [~~开篇： 纵观WEB历史演变~~](https://github.com/pkwenda/blog/issues/10) 
 | 探究 | 深入聊聊前后分离 | [~~探究： 深入聊聊前后分离架构~~](https://github.com/pkwenda/blog/issues/11) 
@@ -23,7 +24,7 @@
 | 实战 | 继续打磨前端架构 | [~~前端实战： 欲善其事先利其器 继续打磨前端架构~~](https://github.com/pkwenda/blog/issues/15)
 | 实战 | 添砖加瓦-快速布局 | [~~前端完善: 手把手教你快速构建网站布局~~](https://github.com/pkwenda/blog/issues/16)
 | 实战 | 性能优化与上线 | [~~前端终(1.0): 前端性能优化与上线~~](https://github.com/pkwenda/blog/issues/17)
-| 实战 | 前端整理 | [~~前端系列文章 20000 字整理~~](https://github.com/pkwenda/blog/issues/17)  
+
  
 
 
