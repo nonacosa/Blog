@@ -2,7 +2,7 @@
 [![Build Status](https://img.shields.io/badge/%E4%B8%BB%E9%A1%B5-segmentfault-green.svg)](https://segmentfault.com/u/pkwenda)
 [![Build Status](https://img.shields.io/badge/%E4%B8%BB%E9%A1%B5-github-lightgrey.svg)](https://github.com/pkwenda)
 
-## 🏆 面试
+## 🏆 基础概念
 
 | Project | language | Article |
 |:-------:|:-------:|:------|
