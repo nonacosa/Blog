@@ -2,12 +2,13 @@
 [![Build Status](https://img.shields.io/badge/%E4%B8%BB%E9%A1%B5-segmentfault-green.svg)](https://segmentfault.com/u/pkwenda)
 [![Build Status](https://img.shields.io/badge/%E4%B8%BB%E9%A1%B5-github-lightgrey.svg)](https://github.com/pkwenda)
 
-## 🏆 基础概念
+## 🏆 源码和理论
 
 | Project | language | Article |
 |:-------:|:-------:|:------|
 | 源码 | java | [ArrayList与LinkedList的实现和区别](https://github.com/pkwenda/blog/issues/26)
 | 源码 | java | [LinkedHashMap 与 LRU](https://github.com/pkwenda/blog/issues/27)
+| 源码 | lua | [Kong 插件源码阅读](https://github.com/pkwenda/blog/issues/29)
 | 理论 | 阅读 | [分布式系统 CAP 理论](https://github.com/pkwenda/blog/issues/28)
 
 ## 🐝 从零打造前后分离 *WEB* 项目
