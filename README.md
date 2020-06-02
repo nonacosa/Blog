@@ -43,7 +43,13 @@
 | 初识docker | video | [`docker`扫盲视频教程 上](https://www.youtube.com/watch?v=IaSOSBs8Z5U) 
 | 清理 docker 缓存 | video | [清除 mac 上巨大的 docker 缓存脚本](https://github.com/pkwenda/Blog/blob/master/clear_docker_cache_mac.sh) 
  
+## ✉️ mq
 
+| Project | language | Article |
+|:-------:|:-------:|:------|
+| docker 快速搭建 rocketmq | shell | [docker 搭建 rocketmq](https://github.com/pkwenda/blog/issues/31) 
+  
+ 
 
 
 ## 🐣 小玩具
@@ -63,7 +69,7 @@
 | 分布式文件系统 | golang   | [如何迁移数据到分布式文件系统](https://github.com/pkwenda/blog/issues/19) |
  
 
- ## 🏠 团队管理
+ ## 🏠 软技能
  
 | Project | language | Article     |
 |---------|----------|-------------|
