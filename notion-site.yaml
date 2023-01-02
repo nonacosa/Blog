@@ -4,9 +4,9 @@ notion:
   filterValue:
     - Finished
     - Published
+    - RePublish
   publishedValue: Published
 markdown:
-  shortcodeSyntax: hugo
-  postSavePath: ./content/post
-  mediaSavePath: ./static/image
-  imagePublicLink: /image
+  homePath: ./
+
+  
