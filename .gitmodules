@@ -1,0 +1,7 @@
+[submodule "themes/hugo-theme-stack"]
+	path = themes/hugo-theme-stack
+	url = https://github.com/Mind-Benders/hugo-theme-stack/
+	branch = main
+[submodule "themes/notion-site-theme"]
+	path = themes/notion-site-theme
+	url = https://github.com/pkwenda/notion-site-theme
