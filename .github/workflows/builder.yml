@@ -1,12 +1,8 @@
 name: build
-on: 
-  # schedule:
-  #   - cron:  '*/10 * * * *' # 15min
-  # pull_request:
-  workflow_dispatch:
-  push:
-    branches:
-      - master
+on:
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch: ~
   pull_request:
   workflow_run:
     workflows: ["wakatime"]
@@ -25,13 +21,15 @@ jobs:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
       - name: Clean the old post
         run: |
-          rm -rf ./content/post/*
+          rm -rf ./content/*
       - name: notion-site
         uses: pkwenda/notion-site@master
         env:
           NOTION_SECRET : ${{ secrets.NOTION_SECRET }}
       - name: Commit files
         run: |
+          git submodule update --init --recursive
+          git submodule update --remote --recursive
           git config user.email "action@github.com"
           git config user.name "GitHub Actions"
           git add --all
@@ -42,7 +40,7 @@ jobs:
       - name: Format documents
         uses: creyD/prettier_action@v3.1
         with:
-          prettier_options: --write ./content/post/**/*.md
+          prettier_options: --write ./content/**/*.md
           commit_message: 'notion-site: update articles (auto)'
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -63,31 +61,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-  # deploy:
-  #   runs-on: ubuntu-latest
-  #   concurrency:
-  #     group: ${{ github.workflow }}-${{ github.ref }}
-  #   steps:
-  #     - uses: actions/checkout@v3
-  #       with:
-  #         submodules: true  # Fetch Hugo themes (true OR recursive)
-  #         fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-  #     - name: Setup Hugo
-  #       uses: peaceiris/actions-hugo@v2
-  #       with:
-  #         hugo-version: 'latest'
-  #         extended: true
-  #     - uses: actions/cache@v2
-  #       with:
-  #         path: /tmp/hugo_cache
-  #         key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
-  #         restore-keys: |
-  #           ${{ runner.os }}-hugomod-
-  #     - name: Build
-  #       run: hugo --minify
-  #     - name: Deploy
-  #       uses: peaceiris/actions-gh-pages@v3
-  #       if: ${{ github.ref == 'refs/heads/main' }}
-  #       with:
-  #         github_token: ${{ secrets.GITHUB_TOKEN }}
-  #         publish_dir: ./public
