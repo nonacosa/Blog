@@ -2,13 +2,13 @@
 title: Better Call Saul
 status: Published
 position: content/post
-categories: []
+categories: [美剧]
 tags: [English]
 keywords: []
 createat: "2022-08-30T06:57:00+07:00"
 author: nonacosa
 istranslated: true
-lastmod: "2023-01-02T16:25:00+07:00"
+lastmod: "2023-01-02T19:17:00+07:00"
 description: ""
 draft: null
 expirydate: null
@@ -18,17 +18,25 @@ image: media/s3.us-west-2.amazonaws.com_7de3c2ca828cd1332455199e22796831.jpeg
 weight: null
 ---
 
+
 ![](media/s3.us-west-2.amazonaws.com_7de558e0-4a6a-4896-a831-9969a6b0d346.png)
 
+
+
 <!--more-->终于看完大结局了，但是却意犹未尽，这部 1-6 季豆瓣评分均季 9.7 的剧，完结了。心中也是五味杂陈，Jimmy 是一个善良正直的好人，然而却被各种因素一步步推向了 Saul，正如有时候睡觉被噩梦惊醒，梦里我变成了一个像 Saul 一样的人，醒了久久不能自拔，庆幸自己做的只是一个梦，带着感激过完了一天。
+
+
 
 ![](media/s3.us-west-2.amazonaws.com_eaeedec9-7510-4007-a474-06fe47487965.png)
 
 成为「索尔·古德曼」的吉米，戴上了职业讼棍的面具
 
+
+
 ## 叨叨
 
---------------------小时候我相信人是自由的，可以自主选择人生的道路；
+
+小时候我相信人是自由的，可以自主选择人生的道路；
 
 人即将到中年整天忙于生计，路越走越窄，只剩下眼前这条小道，不得不承认人是必然存在，受客观条件制约，大部分时候根本没得选。
 
@@ -40,7 +48,7 @@ weight: null
 
 《风骚律师》延续了灰暗的现实主义风格，主角们也在命运编织的蛛网中挣扎：
 
-吉米年轻时坑蒙拐骗，进入 HHM 后想走回正路，但查克对他成见太深，间接导致吉米被主流律师界排斥，只好向社会边缘人群提供法律服务。
+吉米年轻时坑蒙拐骗，进入HHM后想走回正路，但查克对他成见太深，间接导致吉米被主流律师界排斥，只好向社会边缘人群提供法律服务。
 
 后来接触到墨西哥贩毒集团，事态急转直下，半推半就成了黑金律师“索尔古德曼”。
 
@@ -58,7 +66,7 @@ weight: null
 
 所以金才说：“you are not bad for me ,we are bad for each other”。
 
-到 s6e12，所有明暗线都收束完毕，一切都将吉米和金引向命中注定的结局：
+到s6e12，所有明暗线都收束完毕，一切都将吉米和金引向命中注定的结局：
 
 吉米被捕，但凭高超的谈判技巧为自己争得最轻量刑，出狱虽然不能继续当律师，但还是那个成功的犯罪掮客索尔古德曼；
 
@@ -105,3 +113,4 @@ weight: null
 ![](media/img1.doubanio.com_p8045517.jpg)
 
 选一条艰难但正确的道路。
+

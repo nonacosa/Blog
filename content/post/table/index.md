@@ -3,12 +3,12 @@ title: Table
 status: Published
 position: null
 categories: []
-tags: []
+tags: [test]
 keywords: []
 createat: "2023-01-02T10:29:00+07:00"
 author: nonacosa
 istranslated: true
-lastmod: "2023-01-02T10:42:00+07:00"
+lastmod: "2023-01-02T18:59:00+07:00"
 description: ""
 draft: null
 expirydate: null
@@ -18,12 +18,11 @@ image: null
 weight: null
 ---
 
-| 产品        | RSS | 速度 | 备份 | 部署 | 移动端 |
-| ----------- | --- | ---- | ---- | ---- | ------ |
-| Notion      | ❌  | ❌   | ✔    | ✔    | ✔      |
-| Hugo        | ✔   | ✔    | ❌   | ❌   | ❌     |
-| Notion-Site | ✔   | ✔    | ✔    | ✔    | ✔      |
-
+| 产品 | RSS | 速度 | 备份 | 部署 | 移动端 |
+| --- | --- | --- | --- | --- | --- |
+| Notion | ❌ | ❌ | ✔ | ✔ | ✔ |
+| Hugo | ✔ | ✔ | ❌ | ❌ | ❌ |
+| Notion-Site | ✔ | ✔ | ✔ | ✔ | ✔ |
 <!--more-->
 
 <!--more-->
