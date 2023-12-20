@@ -23,7 +23,7 @@ jobs:
         run: |
           rm -rf ./content/*
       - name: notion-site
-        uses: pkwenda/notion-site@master
+        uses: nonacosa/notion-site@master
         env:
           NOTION_SECRET : ${{ secrets.NOTION_SECRET }}
       - name: Commit files
